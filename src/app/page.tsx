@@ -3,7 +3,6 @@ import Image from "next/image";
 import 'react-loading-skeleton/dist/skeleton.css';
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@api/auth/[...nextauth]";
-import LogoutButton from "@components/common/LogoutButton";
 
 export default async function Home() {
   const session = await getServerSession(authOptions);
@@ -30,7 +29,6 @@ export default async function Home() {
                     blurDataURL={`data:image/svg+xml;base64,${btoa('<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" stroke="black" stroke-width="4" fill="none"/><circle cx="20" cy="20" r="10" stroke="black" stroke-width="4" fill="none"/><circle cx="20" cy="20" r="2" stroke="black" stroke-width="4" fill="none"/></svg>')}`}
                 />
             )}
-            <LogoutButton />
         </div>
     );
 }

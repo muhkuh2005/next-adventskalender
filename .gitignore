@@ -38,3 +38,4 @@ next-env.d.ts
 # JetBrains IDE
 .idea
 
+/postgres-data/
