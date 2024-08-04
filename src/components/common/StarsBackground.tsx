@@ -1,6 +1,7 @@
 import React from 'react';
 
 interface Star {
+  id: string;
   size: number;
   top: number;
   left: number;
@@ -14,9 +15,9 @@ interface RandomStarsBackgroundProps {
 const StarsBackground: React.FC<RandomStarsBackgroundProps> = ({ stars = [] }) => {
   return (
     <div className="stars-container">
-      {stars.map((star, index) => (
+      {stars.map((star) => (
         <div
-          key={index}
+          key={star.id} // Use the unique id as the key
           className="star"
           style={{
             width: `${star.size}px`,

@@ -1,6 +1,5 @@
 import GithubProvider from "next-auth/providers/github";
-import { NextAuthOptions } from "next-auth";
-import { Session } from "next-auth";
+import { NextAuthOptions, Session } from "next-auth";
 import { JWT } from "next-auth/jwt";
 import { PrismaClient } from '@prisma/client';
 

@@ -2,7 +2,11 @@
 
 import { signOut } from "next-auth/react";
 
-export default function LogoutButton({ className }: { className?: string }) {
+interface LogoutButtonProps {
+    readonly className?: string;
+}
+
+export default function LogoutButton({ className }: LogoutButtonProps) {
     return (
         <button className={className} onClick={() => signOut()}>Sign out</button>
     );

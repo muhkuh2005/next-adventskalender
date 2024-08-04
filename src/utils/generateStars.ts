@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 export const generateStars = (numberOfStars: number) => {
   const stars = [];
 
@@ -6,8 +8,10 @@ export const generateStars = (numberOfStars: number) => {
     const top = Math.random() * 100; // Random top position between 0% and 100%
     const left = Math.random() * 100; // Random left position between 0% and 100%
     const opacity = Math.random() * 0.5 + 0.5; // Random opacity between 0.5 and 1
+    const id = uuidv4(); // Generate a unique ID
 
     stars.push({
+      id,
       size,
       top,
       left,

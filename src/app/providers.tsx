@@ -5,7 +5,7 @@ import { SessionProvider } from "next-auth/react";
 import { ThemeProvider } from "next-themes"
 
 interface ProvidersProps {
-  children: ReactNode;
+  readonly children: ReactNode;
 }
 
 export default function Providers({ children }: ProvidersProps) {
