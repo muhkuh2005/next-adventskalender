@@ -15,7 +15,7 @@
     "@prisma/client": "5.17.0",
     "clsx": "^2.1.1",
     "marked": "^13.0.3",
-    "next": "^16.0.0",
+    "next": "^16.0.10",
     "next-auth": "beta",
     "next-themes": "^0.4.6",
     "pg": "^8.12.0",
