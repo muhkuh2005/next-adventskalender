@@ -13,5 +13,3 @@ async function getCommit() {
 export async function GET() {
     return await getCommit();
 }
-
-export { getCommit };

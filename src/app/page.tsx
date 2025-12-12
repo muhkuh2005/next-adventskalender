@@ -1,12 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import 'react-loading-skeleton/dist/skeleton.css';
-import { getServerSession } from "next-auth/next";
-import { authOptions } from "@api/auth/[...nextauth]";
+import { auth } from "@/auth";
 
 export default async function Home() {
-  const session = await getServerSession(authOptions);
-    if (!session) {
+  const session = await auth();
+    if (!session || !session.user) {
         // noinspection HtmlUnknownTarget
         return (
             <div>
