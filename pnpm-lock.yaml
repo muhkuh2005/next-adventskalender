@@ -42,7 +42,7 @@ importers:
         specifier: ^19.0.0
         version: 19.2.3
       react-dom:
-        specifier: ^19.0.0
+        specifier: ^19.2.3
         version: 19.2.3(react@19.2.3)
       react-loading-skeleton:
         specifier: ^3.4.0
@@ -61,7 +61,7 @@ importers:
         specifier: ^19.0.0
         version: 19.2.7
       '@types/react-dom':
-        specifier: ^19.0.0
+        specifier: ^19.2.3
         version: 19.2.3(@types/react@19.2.7)
       '@types/uuid':
         specifier: ^10.0.0
